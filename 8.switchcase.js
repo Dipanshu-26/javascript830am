@@ -154,7 +154,7 @@ switch(city){                                    //switch(pune)
 console.log("----------------------------------------")
 
 city = "jaipur"
-isFlag = true
+let isFlag = true
 
 switch(isFlag){                                   //switch(true)
     case (city == "pune" || city == "Pune"):    //case : false
@@ -174,4 +174,37 @@ switch(isFlag){                                   //switch(true)
 
     default :
         console.log("please enter valid city name...")    
+}
+
+console.log("----------------------------------------")
+
+//find greater number from 3 numbers
+
+let a= 100
+let b=20
+let c=30
+
+if(a>b && a>c){
+    console.log("a is greater")
+}    
+else if(b>a && b>c){
+    console.log("b is greater")
+}    
+else {
+    console.log("c is greater")
+}
+
+//switch case
+isFlag = true
+switch(isFlag){
+    case (a>b && a>c):
+        console.log("a is greater")
+        break
+
+    case (b>a && b>c):
+        console.log("b is greater")
+        break 
+      
+    default :
+        console.log("c is greter")    
 }
