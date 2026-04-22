@@ -105,3 +105,69 @@ console.log(a2)
 
 a2 = fruit.slice(1, -7)
 console.log(a2)
+
+// splice()
+// syntax => splice(startIndex, deleteCount, item1, item2, ...)
+// action => removes elements from the array starting at startIndex and optionally inserts new elements
+// return => array of deleted elements (original array gets updated)
+
+//              0     1     2        3      4      5       6       7
+let animal = ['cat','dog','tiger','lion','wolf','camel','rabbit','snake']
+
+//animal.shift()
+console.log(animal)
+
+//animal.splice(2,3)
+//console.log(animal)
+
+// animal.splice(2,3,"aaa","bbb","ccc")
+// console.log(animal)
+
+// animal.splice(2,3,"aaa")
+// console.log(animal)
+
+let x1 = animal.splice(2,1,"aaa","bbb","ccc")
+console.log(animal)
+console.log(x1)
+
+// fill()
+// syntax => fill(value, startIndex?, endIndex?)  // endIndex not included
+// action => fills array elements with the given value from startIndex to before endIndex
+// return => updates the existing array
+//          0  1  2  3  4  5  6
+let num = [11,22,33,44,55,66,77]
+
+// num.fill('a',3,6)
+// console.log(num)
+
+// num.fill(undefined,3,6)
+// console.log(num)
+
+// num.fill([1,2,3],2,3)
+// console.log(num)
+
+let info = {"name" : "dipanshu"}
+let x2 = num.fill(info,2,4)
+console.log(num)
+console.log(x2)
+
+
+// sort()
+// action => sorts the array elements (alphabetically by default, ascending order)
+// return => updates the existing array
+
+let country = ['india','shrilanka','bali','france','japan','indonesia']
+console.log(country)
+country.sort()
+console.log(country)
+
+
+let numbers = [67,89,45,23,90,1,64]
+numbers.sort()
+console.log(numbers)
+
+
+
+
+
+
