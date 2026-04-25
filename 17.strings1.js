@@ -92,6 +92,15 @@ console.log(str.startsWith("D"))
 console.log(str.startsWith("Dip"))
 console.log(str.startsWith("d"))
 
+//endsWith()
+console.log(str.endsWith("e"))
+console.log(str.endsWith("wde"))
+console.log(str.endsWith("Wde"))
+
+
 //repeat
 a="aditya"
 console.log(a.repeat(3))
+
+
+
