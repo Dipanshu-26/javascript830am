@@ -147,3 +147,6 @@ response.forEach(function(el){
     map4.set(el.id, el.name)
 })
 console.log(map4)
+
+map4.clear()
+console.log(map4)
