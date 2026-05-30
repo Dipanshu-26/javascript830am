@@ -32,7 +32,7 @@ let map1 = new Map([
     [true , "hasVechicle"]
 ])
 console.log(map1)
-
+console.log(map1.size)
 //-----------------------------------------------------
 let map2 = new Map()
 
@@ -56,6 +56,13 @@ console.log(2==2)
 console.log("dip" == "dip")
 console.log([1,2,3] == [1,2,3])     //false
 console.log({fn : "dip"} == {fn : "dip"})   //reference 
+let a="dip"
+let b="dip"
+console.log(a==b)
+a = [1,2,3]
+b= [1,2,3]
+console.log(a==b)
+console.log(JSON.stringify(a) == JSON.stringify(a) )
 //----------------------------------------------------------
 
 let map3 = new Map([
@@ -95,8 +102,9 @@ console.log(map3)
 
 let arr= [1,2,3,4]
 console.log(arr)
+console.log(6 in arr)
 
-//if any key exists?
+//if any key exists? (no method to find values need to find using logic)
 let q4 = map3.has(5)
 console.log(q4)
 
@@ -150,3 +158,26 @@ console.log(map4)
 
 map4.clear()
 console.log(map4)
+
+//---------------------------------------------------
+//Check if a value exists
+let q = [...map3.values()].includes("Python");
+
+console.log(q);
+
+//Find the key for a value
+for (let [key, value] of map3) {
+    if (value === "Python") {
+        console.log(key);
+        break;
+    }
+}
+
+//--------------------------------------------------
+//get key for given value 
+for (let [key, value] of map1) {
+    if (value === "chawde") {
+        console.log(key);
+        break;
+    }
+}
