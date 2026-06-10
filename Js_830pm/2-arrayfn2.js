@@ -38,7 +38,7 @@ while(a<names.length){
 // action - add the element to end of array
 // return - new length  of array
 //--------------------------------------------------------
-//push(),pop(),shift(),unshift(),
+//push(),pop(),shift(),unshift(),reverse(), concat()
 
 let nums = [11,22,33,44,55,66]
 
