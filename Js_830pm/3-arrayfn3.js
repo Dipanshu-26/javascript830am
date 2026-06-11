@@ -105,3 +105,28 @@ let animals = ["tiger","lion","wolf",'camel',"rabbit","snake"]
 
 animals.splice(1,3,"aa","bb","cc","dd","ee")
 console.log(animals)
+
+//fill()
+// syntax => fill(value, startIndex?, endIndex?)  // endIndex not included
+// action => fills array elements with the given value from startIndex to before endIndex
+// return => updates the existing array
+
+let num=[11,22,33,44,55,66]
+num.fill("abc",2,5)
+console.log(num)
+
+
+// sort()
+// action => sorts the array elements (alphabetically by default, ascending order)
+// return => updates the existing array
+
+let country = ["india","jbapan","srilanka","bangladesh","japan"]
+console.log(country.sort())
+
+num=[2,11,89,0,22,11,33,44,5,55,66]
+console.log(num.sort())
+
+
+
+
+
