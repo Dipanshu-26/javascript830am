@@ -36,3 +36,30 @@ function createButton(li){
 }
 
 //step 3 : add functionality to buttons
+
+ulList.addEventListener('click',function(){
+    if(event.target.tagName == 'BUTTON'){
+        if(event.target.className == 'rm'){
+            let li = event.target.parentElement
+            let ul = li.parentElement
+            ul.removeChild(li)
+        }
+        else if(event.target.className == 'up'){
+            let li = event.target.parentElement
+            let ul = li.parentElement
+            let preLi = li.previousElementSibling
+            if(preLi){
+                ul.insertBefore(li,preLi)
+            }
+        }
+
+        else if(event.target.className == 'dn'){
+            let li = event.target.parentElement
+            let ul = li.parentElement
+            let nextLi = li.nextElementSibling
+            if(nextLi){
+                ul.insertBefore(nextLi,li)
+            }
+        }
+    }
+})
